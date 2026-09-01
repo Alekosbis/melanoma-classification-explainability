@@ -1,13 +1,29 @@
+# Deep learning
 torch
 torchvision
 timm
 transformers
+
+# Explainable AI
+captum
+grad-cam
+shap
+
+# Data processing and machine learning
 numpy
 pandas
-matplotlib
+openpyxl
 scikit-learn
 opencv-python
 Pillow
-shap
+
+# Visualisation
+matplotlib
 seaborn
+
+# Utilities
 tqdm
+
+# Local notebook environment
+jupyterlab
+ipykernel
