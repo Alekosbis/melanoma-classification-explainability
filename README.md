@@ -29,6 +29,14 @@ melanoma-classification-explainability/
 │   ├── 02_derm7pt_densenet121_cv_xai.ipynb
 │   ├── 03_isic2019_efficientnetb0_feature_space.ipynb
 │   └── 04_isic2016_vgg_unet_gradcam.ipynb
+├── results/
+│   ├── figures/
+│   │   ├── cnn_vs_vit_comparison.png
+│   │   ├── derm7pt_cross_validation_summary.png
+│   │   ├── isic2019_feature_space_evolution.png
+│   │   └── isic2016_vgg_unet_gradcam.png
+│   └── README.md
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
@@ -104,6 +112,26 @@ For the ISIC 2016 segmentation experiment, VGG-U-Net achieved:
 - **Validation IoU:** 0.8330
 
 Results correspond to the evaluation settings and dataset splits documented in the thesis.
+
+## Selected Visual Results
+
+### CNN vs Vision Transformer Comparison
+
+![CNN vs Vision Transformer comparison](results/figures/cnn_vs_vit_comparison.png)
+
+### Derm7pt Five-Fold Cross-Validation
+
+![Derm7pt cross-validation summary](results/figures/derm7pt_cross_validation_summary.png)
+
+### ISIC 2019 Feature-Space Evolution
+
+![ISIC 2019 feature-space evolution](results/figures/isic2019_feature_space_evolution.png)
+
+### ISIC 2016 VGG-U-Net Explainability
+
+![ISIC 2016 VGG-U-Net Grad-CAM panel](results/figures/isic2016_vgg_unet_gradcam.png)
+
+Dataset attribution, licensing information and figure descriptions are documented in [`results/README.md`](results/README.md).
 
 ## Installation
 
