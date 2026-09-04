@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+kaggle.json
+credentials.json
+secrets.json
+
+# Datasets and large input archives
+data/
+datasets/
+raw_data/
+*.zip
+*.tar
+*.tar.gz
+
+# Trained models and checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pkl
+*.joblib
+
+# Experiment logs
+logs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
