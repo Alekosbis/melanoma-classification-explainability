@@ -183,3 +183,9 @@ M.Sc. in Information Systems
 Hellenic Open University
 
 GitHub: [Alekosbis](https://github.com/Alekosbis)
+
+## Usage and Rights
+
+Copyright © 2026 Alexandros Bistolas. All rights reserved.
+
+No license is granted to use, modify, or redistribute the original code and documentation contained in this repository without prior written permission from the author. Third-party datasets and assets remain subject to their respective licenses and terms.
