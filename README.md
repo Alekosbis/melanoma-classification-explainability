@@ -28,13 +28,17 @@ melanoma-classification-explainability/
 │   ├── 01_cnn_vs_vision_transformer.ipynb
 │   ├── 02_derm7pt_densenet121_cv_xai.ipynb
 │   ├── 03_isic2019_efficientnetb0_feature_space.ipynb
-│   └── 04_isic2016_vgg_unet_gradcam.ipynb
+│   ├── 04_isic2016_vgg_unet_gradcam.ipynb
+│   ├── 05_isic2017_vit_tiny_attention_rollout.ipynb
+│   └── 06_ham10000_resnet50_gradcampp_shap.ipynb
 ├── results/
 │   ├── figures/
 │   │   ├── cnn_vs_vit_comparison.png
 │   │   ├── derm7pt_cross_validation_summary.png
 │   │   ├── isic2019_feature_space_evolution.png
-│   │   └── isic2016_vgg_unet_gradcam.png
+│   │   ├── isic2016_vgg_unet_gradcam.png
+│   │   ├── isic2017_vit_tiny_attention_rollout_summary.png
+│   │   └── ham10000_resnet50_xai_summary.png
 │   └── README.md
 ├── .gitignore
 ├── requirements.txt
@@ -49,6 +53,8 @@ melanoma-classification-explainability/
 | `02_derm7pt_densenet121_cv_xai.ipynb` | DenseNet121 classification on Derm7pt using five-fold cross-validation and explainable AI. |
 | `03_isic2019_efficientnetb0_feature_space.ipynb` | EfficientNet-B0 feature-space analysis on ISIC 2019, including dimensionality reduction and clustering evaluation. |
 | `04_isic2016_vgg_unet_gradcam.ipynb` | VGG-U-Net skin lesion segmentation on ISIC 2016 with visual explanation analysis. |
+| `05_isic2017_vit_tiny_attention_rollout.ipynb` | ViT-Tiny binary classification on ISIC 2017 with head-only training, full fine-tuning and quantitative attention-rollout analysis. |
+| `06_ham10000_resnet50_gradcampp_shap.ipynb` | ResNet50 binary melanoma classification on HAM10000 with threshold tuning, Grad-CAM++ and SHAP across training checkpoints. |
 
 ## Datasets
 
@@ -105,6 +111,8 @@ These methods are used to examine which image regions influence model prediction
 | HAM10000 binary classification – EfficientNet-B0 | 92.15% | 65.09% | 93.50% |
 | HAM10000 multiclass classification – EfficientNetV2-S | 77.76% | 76.63% macro | 96.80% |
 | PH2 binary classification – ConvNeXt-Tiny | 93.33% | 83.33% | 98.61% |
+| ISIC 2017 binary classification – ViT-Tiny after fine-tuning | 83.50% | 53.95% | 82.00% |
+| HAM10000 binary classification – ResNet50 | 91.75% | 66.12% | 92.57% |
 
 For the ISIC 2016 segmentation experiment, VGG-U-Net achieved:
 
@@ -130,6 +138,14 @@ Results correspond to the evaluation settings and dataset splits documented in t
 ### ISIC 2016 VGG-U-Net Explainability
 
 ![ISIC 2016 VGG-U-Net Grad-CAM panel](results/figures/isic2016_vgg_unet_gradcam.png)
+
+### ISIC 2017 ViT-Tiny Fine-Tuning and Attention Rollout
+
+![ISIC 2017 ViT-Tiny summary](results/figures/isic2017_vit_tiny_attention_rollout_summary.png)
+
+### HAM10000 ResNet50 Classification and XAI
+
+![HAM10000 ResNet50 summary](results/figures/ham10000_resnet50_xai_summary.png)
 
 Dataset attribution, licensing information and figure descriptions are documented in [`results/README.md`](results/README.md).
 
