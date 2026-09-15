@@ -1,6 +1,6 @@
 # Selected Visual Results
 
-This directory contains representative figures exported from the experiment notebooks. The figures are included to make the main findings easier to inspect without executing the complete training pipelines.
+This directory contains representative figures exported from the experiment notebooks or generated from their recorded aggregate results. The figures are included to make the main findings easier to inspect without executing the complete training pipelines.
 
 ## Figures
 
@@ -28,7 +28,25 @@ Evolution of the learned feature space from the untrained representation to the 
 
 Input image, ground-truth mask, predicted probability map and Grad-CAM++ explanations for different segmentation targets.
 
+### ISIC 2017 ViT-Tiny Fine-Tuning and Attention Rollout
+
+![ISIC 2017 ViT-Tiny summary](figures/isic2017_vit_tiny_attention_rollout_summary.png)
+
+Comparison of head-only and fully fine-tuned classification performance, together with before-and-after attention-to-lesion alignment for last-layer CLS attention and attention rollout.
+
+### HAM10000 ResNet50 Classification and XAI
+
+![HAM10000 ResNet50 summary](figures/ham10000_resnet50_xai_summary.png)
+
+Recorded test-set metrics and confusion matrix for the ResNet50 binary melanoma classifier at the selected validation threshold.
+
 ## Data Attribution and Licensing
+
+### ISIC 2017 and HAM10000 Aggregate Figures
+
+The ISIC 2017 and HAM10000 figures contain aggregate experimental metrics only and do not redistribute original clinical or dermoscopic images. Dataset access and citation information is available through the [official ISIC Challenge dataset page](https://challenge.isic-archive.com/data/).
+
+Relevant references are included below in the ISIC 2019 section.
 
 ### ISIC 2019
 
